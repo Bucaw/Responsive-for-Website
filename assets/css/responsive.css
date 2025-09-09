@@ -75,17 +75,103 @@
 .navbar__link:hover{
     background-color: #00FFFF37;
 }
+/* Hero */
+.hero{
+    flex-direction: column-reverse;
+    gap: 50px;
+}
+.hero__content{
+    width: 80%;
+    text-align: center;
+    margin: 22px auto;
+}
+.hero__row{
+    justify-content: center;
+}
+/* service */
+.service__row{
+    flex-direction: column;
+    row-gap: 20px;
+}
+.service__img{
+    width: 100%;
+}
+.service-item{
+    width: 90%;
+    text-align: start;
+}
+.service__list{
+    text-align: center;
+}
+/* work */
+.work__list{
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+}
+/* about */
+.about-row{
+    flex-direction: column;
+    row-gap: 50px;
+}
+.about__img--small{
+    display: none;
+}
+.about__media{
+    width: 100%;
+}
+.about__img--big{
+    width: 100%;
+    border-radius: 15px;
+    margin: 25px auto;
+}
+.about-content{
+    width: 90%;
+    text-align: center;
+}
+/* team */
+.team__list{
+    grid-template-columns: repeat(2 , 1fr);
+    row-gap: 30px;
+}
+.team-item__thumb{
+    margin: 0 auto;
+}
+/* install */
+.install__img{
+    display: none;
+}
+.install__content{
+    width: 90%;
+    margin: 0 auto;
+}
+/* blog */
+.blog__inner{
+    flex-direction: column-reverse;
+    row-gap: 30px;
+}
+.blog__content{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blog__heading{
+    max-width: 90%;
+}
+/* footer */
+
 }
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991.98px){
-
+/* footer */
+.footer__top{
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+}
+.footer-hidden-tablet{
+    display: none;
+}
 }
 /* Mobile */
 @media (max-width: 768px){
 
-}
-
-/* ẩn phần ko liên quan */
-.hero,.footer,main{
-    display: none;
 }
